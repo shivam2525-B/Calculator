@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="bg">
+        <div id="calc-main">
+            <div id="screen">
+                <button id="All-History" onclick="
+                    document.querySelector('.answer').innerText = history ">All History</button>
+                <button id="Clear-History" onclick="history.splice(0,history.length)" >Clear History</button>
+                <h3 class="answer" >0</h3></div>
+            <div id="buttons">
+                <div id="left-button">
+                    <button id="c" onclick="document.querySelector('.answer').innerText = '0';
+                    inputs.splice(0,inputs.length);">C</button>
+                    <button id="divide" onclick="document.querySelector('.answer').innerText = '➗';
+                    inputs.push('/')">➗</button>
+                    <button id="multiply" onclick="document.querySelector('.answer').innerText = '✖️';
+                    inputs.push('*')">✖️</button>
+                    <button id="minus" onclick="document.querySelector('.answer').innerText = '-';
+                    inputs.push('-')">-</button>
+                    <button id="one" class="no" onclick="document.querySelector('.answer').innerText = '1';
+                    inputs.push('1')">1</button>
+                    <button id="two" class="no" onclick="document.querySelector('.answer').innerText = '2';
+                    inputs.push('2')">2</button>
+                    <button id="three" class="no" onclick="document.querySelector('.answer').innerText = '3';
+                    inputs.push('3')">3</button>
+                    <button id="plus" onclick="document.querySelector('.answer').innerText = '+';
+                    inputs.push('+')">+</button>
+                    <br>
+                    <button id="four" class="no" onclick="document.querySelector('.answer').innerText = '4';
+                    inputs.push('4')">4</button>
+                    <button id="five" class="no" onclick="document.querySelector('.answer').innerText = '5';
+                    inputs.push('5')">5</button>
+                    <button id="six" class="no" onclick="document.querySelector('.answer').innerText = '6';
+                    inputs.push('6')">6</button>
+                    <button id="mod" onclick="document.querySelector('.answer').innerText = '%';
+                    inputs.push('%')">%</button>
+                    <br>
+                    <button id="seven" class="no" onclick="document.querySelector('.answer').innerText = '7';
+                    inputs.push('7')">7</button>
+                    <button id="eight" class="no" onclick="document.querySelector('.answer').innerText = '8';
+                    inputs.push('8')">8</button>
+                    <button id="nine" class="no" onclick="document.querySelector('.answer').innerText = '9';
+                    inputs.push('9')">9</button>
+    
+                    <button id="enter" onclick="document.querySelector('.answer').innerText = result();
+                    hisAdd();">Enter</button>
+                    <br>
+                    <button id="zero" onclick="document.querySelector('.answer').innerText = '0';
+                    inputs.push('0')">0</button>
+                    <button id="dot" class="no" onclick="document.querySelector('.answer').innerText = '.';
+                    inputs.push('.')">.</button>
+                    <button id="history" onclick="document.querySelector('.answer').innerText = hispr();
+                    inputs.push(hispr());">History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
